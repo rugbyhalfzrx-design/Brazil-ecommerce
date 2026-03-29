@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="Olist Dashboard", layout="wide")
 st.title("📊 管理用ダッシュボード")
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data") #現在のスクリプトがあるディレクトリの絶対パスを取得している
+DATA_DIR = os.path.dirname(os.path.abspath(__file__)) #現在のスクリプトがあるディレクトリの絶対パスを取得している
 
 @st.cache_data #この関数は初回だけ、2回目以降は同じ引数で呼び出すとキャッシュから即座に結果を返すので、いちいち処理しなくてよくなる
 def load_data():
