@@ -2,3 +2,4 @@ streamlit==1.55.0
 pandas
 plotly
 altair==4.2.2
+statsmodels
